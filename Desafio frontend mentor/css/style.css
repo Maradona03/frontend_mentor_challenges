@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:"Outfit", sans-serif;
+    
+}
+
+
+body{
+        background-color: hsl(217, 54%, 11%);
+        width: 1440px;
+        display: flex; 
+        align-items: center;
+        justify-content: center;
+
+}
+
+
+main{   display: grid;
+        grid-template-columns: 18.9rem;
+        grid-template-rows: 18.5rem 6rem 2rem 1.5rem 4rem;  
+        margin-top: 9rem;
+        background: hsl(216, 50%, 16%);
+        max-width: 30%;
+        border-radius: 1rem;
+        box-shadow: -10px 10px 20px 10px rgb(17, 17, 30);;
+
+}
+
+
+.prism img{
+        border-radius: 9%;
+         display: flex;
+         justify-content: center;
+         flex-direction: column;
+         width: 100%;
+         padding: 1.3rem;
+
+}
+
+
+main section{
+
+                display: flex;
+                align-items: left;
+                justify-content: center;
+                flex-direction: column;
+                padding: 0 1.5rem;
+                height: 100%;
+                width: 100%;
+                
+}
+
+
+section{ color: hsl(215, 51%, 70%)
+}
+
+
+#tittle{ color: rgb(255, 255, 255);
+        font-size: 18px;        
+        margin-bottom: 1rem;
+        margin-top: 0rem;
+}
+
+
+.price{ 
+        font-size: 0.8rem;
+        display: flex;
+        padding: 1.4rem;
+        align-items: center;
+        color: hsl(178, 100%, 50%);
+        justify-content: space-between;
+}
+
+.price img { 
+        size: 0.9rem;
+        float:left;
+        margin-right: 0.4rem;
+        justify-content: center;
+        align-items: center;
+}
+
+
+#clock{ color: hsl(215, 51%, 70%);
+        font-size: 0.8rem;
+        align-items: center;
+        }
+
+
+.autor{
+        font-size: 0.9rem;
+        padding: 1.4rem;
+        padding-bottom: 2rem;
+        display: flex;
+        align-items: center;
+        color: hsl(215, 51%, 70%);
+}
+
+
+.line { display:flex:
+        color: hsl(215, 32%, 27%);
+        padding: 1.3rem;
+       
+    
+}
+
+hr{color: hsl(215, 32%, 27%);
+        align-items: center;
+        justify-content: center;}
+
+.autor img{
+               
+                border:  1.5px solid;
+                border-radius: 50%;
+               
+}
+
+.autor span { color: white;}
+
+.autor p{ padding: 1rem;}
+
