@@ -1,0 +1,211 @@
+html{margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: Barlow Semi Condensed;}
+
+        h2{font-size: 1.5rem;}
+
+    .container{display: grid;
+                grid-template-columns: 20rem 20rem 20rem 20rem;
+                grid-template-rows: 22rem 22rem;
+                grid-template-areas: "da  da jo ki"
+                                      "je pa pa ki";
+                                     grid-gap: 2rem;
+                justify-content: center;
+                margin-top: 2%;}
+            
+/*------------------------------------------------------------------*/          
+
+
+    .daniel{
+            background-color: hsl(263, 55%, 52%);
+            grid-area: da;
+            padding: 2rem;
+            color: hsl(0, 0%, 81%);
+            flex-wrap: wrap;
+            font-size: 1rem;
+            border-radius: 8px;}
+
+            *#asp{font-size: 15rem;
+                font-family:BIZ UDPGothic;
+                transform: scale(1, -1);
+                color:white;
+            
+                transform: scale(-1, -1);
+            }
+
+            .autorda{position: relative;
+                    bottom: 10px;}
+
+                .autorda p{margin: 0;
+                            padding: 0;}
+
+                .autorda strong{margin:0;
+                                padding: 0;
+                                 color: white;
+                                font-size: 1.2rem;}
+
+                                 .autor p{margin:0;
+                                    padding: 0;}
+                .autorda span{opacity: 50%;
+                            color: white;}
+
+
+                .daniel h2{color: white;}
+                .danieljpg{display: flex;
+                            justify-content: left;}
+                .danieljpg img{ border-radius: 0%;
+                                border-color: transparent %;
+                                border-style: solid ;
+                                border-radius: 50%;
+                               
+                                margin-right: 1.5rem;}
+                                
+/*------------------------------------------------------------------------*/
+
+
+    .jonathan{
+        background-color: hsl(217, 19%, 35%);
+        grid-area: jo;
+        padding: 2rem;
+        color: hsl(0, 0%, 81%);
+        font-size: 1rem;
+        border-radius: 8px;}
+
+        .autorjo strong{margin:0;
+            padding: 0;
+             color: white;
+            font-size: 1.2rem;}
+
+.autorjo p{margin: 0;
+            padding: 0;}
+
+.autorjo span {  margin:0;
+                padding: 0;
+                opacity: 50%;   
+                color: white;}
+
+                .jonathan h2{color: white;}
+
+                .jonathanjpg{display: flex;
+                            justify-content: left;}
+
+                .jonathanjpg img{ border-radius: 0%;
+                                border-color: transparent %;
+                                border-style: solid ;
+                                border-radius: 50%;
+                               
+                                margin-right: 1.5rem;}
+
+/*----------------------------------------------------------------*/
+
+.jeanette{
+    background-color: white;
+    grid-area: je;
+    padding: 2rem;
+    padding-right: 4rem;
+    color: hsl(0, 0%, 60%);
+    font-size: 1rem;
+    border-radius: 8px;
+    box-shadow: 6px 13px 19px -10px rgba(0,0,0,0.75);}
+
+    .autorje strong{margin:0;
+        padding: 0;
+         color: hsl(217, 19%, 35%);
+        font-size: 1.2rem;}
+
+.autorje p{margin: 0;
+        padding: 0;}
+
+.autorje span {  margin:0;
+            padding: 0;
+            opacity: 50%;   
+            color: white;}
+
+            .jeanette h2{color:hsl(217, 19%, 35%);
+                        padding-bottom: 1rem;}
+
+            .jeanettejpg{display: flex;
+                        justify-content: left;}
+
+            .jeanettejpg img{ border-radius: 0%;
+                            border-color: transparent %;
+                            border-style: solid ;
+                            border-radius: 50%;
+                           
+                            margin-right: 1.5rem;}
+
+/*------------------------------------------------------------------------------*/
+
+.patrick{
+    background-color: hsl(219, 29%, 14%);
+    grid-area: pa;
+    padding: 2rem;
+    padding-right: 3.8rem;
+    color: hsl(0, 0%, 60%);
+    font-size: 1rem;
+    border-radius: 8px;}
+
+    .autorpa strong{margin:0;
+        padding: 0;
+         color: white;
+        font-size: 1.2rem;}
+
+.autorpa p{margin: 0;
+        padding: 0;}
+
+.autorpa span {  margin:0;
+            padding: 0;
+            opacity: 50%;   
+            color: white;}
+
+            .patrick h2{color:white;
+                        padding-bottom: 1rem;}
+
+            .patrickjpg{display: flex;
+                        justify-content: left;}
+
+            .patrickjpg img{ border-radius: 0%;
+                            border-color:  hsl(263, 55%, 52%);
+                            border-style: solid ;
+                            border-radius: 50%;
+                           
+                            margin-right: 1.5rem;}
+
+/*-------------------------------------------------------------------------*/
+
+.kira{
+    background-color: white;
+    grid-area: ki;
+    padding: 2rem;
+    padding-right: 2.5rem;
+    color: hsl(0, 0%, 60%);
+    font-size: 1rem;
+    border-radius: 8px;
+    box-shadow: 6px 13px 19px -10px rgba(0,0,0,0.75);}
+
+    .autorki strong{margin:0;
+        padding: 0;
+         color:hsl(217, 19%, 35%);
+        font-size: 1.2rem;}
+
+.autorki p{margin: 0;
+        padding: 0;}
+
+.autorki span {  margin:0;
+            padding: 0;
+            opacity: 50%;   
+            color: hsl(217, 19%, 35%)}
+
+            .kira h2{color:hsl(217, 19%, 35%);
+                        padding-bottom: 1rem;}
+
+            .kirajpg{display: flex;
+                        justify-content: left;}
+
+            .kirajpg img{ border-radius: 0%;
+                            border-color: ;
+                            border-style: solid ;
+                            border-radius: 50%;
+                           
+                            margin-right: 1.5rem;}
