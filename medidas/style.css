@@ -1,0 +1,392 @@
+*{margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: ubuntu;}
+
+
+    .container{ margin-left: rem;
+                display: grid;
+                grid-template-columns: ;
+                grid-template-rows: 8rem 112rem 6rem;
+                grid-template-areas:    "he"
+                                        "ma"
+                                        "fo";
+    }
+
+/*-------------------------------------------------------------------------------------*/
+
+    header{
+            display: flex;
+            grid-area: he;
+            background:linear-gradient(black,black, black, black, rgb(40, 39, 39));
+            color: white;
+            text-align: center;
+            border-bottom: 0.2rem rgb(206, 135, 5) solid;
+    }
+            #logo{margin: 0.5rem;
+                        margin: auto;}
+
+                        header strong{text-align: center;
+                                margin-top: 1.5rem;
+                                       }
+/*----------------------------------------------------------------------------*/
+#avatar img{ 
+                border: solid orange;
+                border-radius: 50%;}
+                
+                #avatar{padding: 1rem;
+                        margin-top: 0.5rem;
+                        margin-left: 1rem;
+                        }
+/*----------------------------------------------------------------------*/
+
+/*---------------------------------------------------------------------------*/
+
+main{
+
+        background-color: rgb(24, 24, 24);
+}
+
+h2{ 
+        margin:auto;
+
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+
+        background-color: rgb(24, 24, 24);
+        color: orange}
+
+/*------------------------Campo Sexo--------------------------------------------*/
+
+.sexo {  margin: auto;
+        display: flex;
+        color: chocolate;
+        width: 12rem;
+        }
+
+        .sexo p{
+                padding: 0.5rem;}
+      
+
+        #sexo{-webkit-appearance:none ;
+        -moz-appearance: none;
+        -ms-appearance:none;
+        appearance:none;
+        outline:0 ;
+        box-shadow: none;
+        border: 0!important;
+        background: rgb(240, 198, 161);
+        background-image: none;
+        font-family: Arial, Helvetica, sans-serif}
+
+        .escolha::-ms-expand{
+                        display: none;
+                        font-family: Arial, Helvetica, sans-serif;
+                     
+        }
+
+
+        #sexo{  text-align:justify;
+                position: relative;      
+                display: flex;  
+                width: 5rem;
+                height: 2rem;
+                line-height: 3;
+                background-color: rgb(245, 212, 82);
+                overflow: hidden;
+                border-radius: .25em;}
+
+                #sexo{ flex: 1;
+                        padding: 0 .5em;
+                        color:black;
+                        cursor: pointer;
+                        font-family: Arial, Helvetica, sans-serif;
+                        font-size: 1rem;}
+
+                        #sexo::after{content: '\25BC';
+                                        position: absolute;
+                                        top: 0;
+                                        right: 0;
+                                        padding: 0 1em;
+                                        background: black;
+                                        cursor: pointer;}
+
+
+        .sexo p{margin-bottom: 1rem;
+        }
+
+/*----------------------------------Tabela de Dados Pesoais-----------------------*/
+#tabela_nome{width: 25rem;
+        
+        margin:auto;
+        margin-bottom: 1rem;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        
+        background-color:rgb(41, 40, 40);
+        color: white;
+        font: size 0.5rem;;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        border-radius: 5px;}
+        
+                        .tdidade  {padding-left: 4rem;
+                                 padding-right: 4rem;
+                                text-align: center;
+                                content: 4rem;
+                                }
+
+                                #tabela_nome tbody tr td{size: 3rem;
+                                }
+
+
+        #tabela_nome tbody input{background-color:chocolate
+                                border: none;
+                                border-radius: 10px;
+                                }
+
+                #nome {width: 10rem;}
+
+                input{
+                        text-align: center;
+                        font-style:bold;
+                        font-size: medium;
+                                }
+/*--------------------------------------Tabela de Adipometria ------------------------------------------------------------*/
+.logoadp{display: flex;
+        padding: 1rem;
+        margin-bottom: 1rem;
+        margin-left: 1rem;}
+                
+        .logoadp img{border-radius: 50%;
+                border: solid orange;
+                background-color: white;}
+
+                .logoadp  h3{margin-bottom: 3rem;
+                        margin: auto;
+                        color: orange;}
+
+
+.adipometria h3{margin-bottom: 2rem;
+                }
+
+.adipometria{width: 25rem;
+        
+        margin:auto;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+       
+        background-color: rgb(58, 57, 57);
+        color: white;
+        font: size 0.5rem;;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        border-radius: 5px;}
+
+        #tabela  {
+                padding: rem;
+                margin: auto;
+               text-align: center;
+               content: 4rem;
+               }
+
+               #tabela tbody tr td{size: 3rem;
+               }
+
+
+#tabela tbody input{background-color:chocolate
+               border: none;
+               border-radius: 10px;
+               }
+
+
+input{
+       text-align: center;
+       font-style:bold;
+       font-size: medium;
+               }
+
+/*----------------------------------cores inputs---------------------*/
+
+#tri{background-color: rgb(248, 199, 66);} 
+          
+#pei{background-color: rgb(248, 199, 66);}
+ 
+#supra{background-color: rgb(248, 199, 66);}
+ 
+#coxa{background-color: rgb(248, 199, 66);}
+
+/*------------------------------------Botões de Calcular e Limpar------------------------------------------------*/
+
+
+#calcular{ background-color: orange;
+                width: 6rem;
+                padding-left: 1rem;
+                padding-right: 1rem;
+                padding: 0.3rem;
+                font-size: 1rem;
+                margin: 1rem;
+                border: none;
+                border-radius: 10px;
+}
+                #calcular:hover{
+                        color:rgb(245, 204, 127);
+                        background: orangered;
+                        box-shadow: 0 0 10px #7b3900, 0 0 20px #7b3900, 0 0 30px
+                }
+
+                        #calcular:active{
+                                color:rgb(255, 255, 255);
+                                background: rgb(136, 38, 2);
+                                box-shadow: 0 0 10px #7b3900, 0 0 20px #7b3900, 0 0 30px
+                        }
+
+#limpar{background-color: orange;
+        width: 6rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding: 0.3rem;
+        font-size: 1rem;
+        margin: 1rem;
+        border: none;
+        border-radius: 10px;}
+
+        #limpar:hover{
+                color:rgb(245, 204, 127);
+                background: orangered;
+                box-shadow: 0 0 10px #7b3900, 0 0 20px #7b3900, 0 0 30px
+        }
+
+                #limpar:active{
+                        color:rgb(255, 255, 255);
+                        background: rgb(136, 38, 2);
+                        box-shadow: 0 0 10px #7b3900, 0 0 20px #7b3900, 0 0 30px
+                }
+
+/*--------------------------------Tabela de Resultados--------------------------------------------------------*/
+
+.resultadosLogo{display: flex;
+                padding: 1rem;
+                margin-bottom: 1rem;
+                margin-left: 1rem;}
+               
+
+.resultados h3{margin-bottom: 3rem;
+                margin: auto;
+                color: orange;}
+
+.resultados{width: 25rem;
+        margin-top: 5rem;
+        margin:auto;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+       
+        background-color: rgb(41, 40, 40);
+        color: white;
+        font: size 0.5rem;;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        border-radius: 5px;}
+
+        #tabela_resultados {
+                padding: rem;
+                margin: auto;
+               text-align: center;
+               content: 4rem;
+               }
+
+               #tabela_resultados tbody tr td{size: 3rem;
+               }
+
+
+#tabela_resultados tbody input{background-color:chocolate
+                                border: none;
+                                border-radius: 10px;
+        }
+#nome_resul{width: 10rem;}
+
+input{
+       text-align: center;
+       font-style:bold;
+       font-size: medium;
+               }
+
+
+
+/*-------------------------------- Perimetria -------------------------------------*/
+
+.perimetri{display: flex;
+        padding: 1rem;
+        margin-bottom: 1rem;
+        margin-left: 1rem;}
+
+.perimetri img{border-radius: 50%;
+                border: solid orange;
+                background-color: white;}
+.perim h3{margin-bottom: 3rem;
+                margin: auto;
+                color: orange;}
+
+.perim{
+
+        width: 25rem;
+        margin-top: 5rem;
+        margin:auto;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+       
+        background-color: rgb(58, 57, 57);
+        color: white;
+        font: size 0.5rem;;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        border-radius: 5px;}
+
+        #perimetria {
+                padding: rem;
+                margin: auto;
+               text-align: center;
+               content: 4rem;
+               }
+
+               #tabela_resultados tbody tr td{size: 3rem;
+               }
+
+
+#perimetria tbody input{background-color:chocolate
+                                border: none;
+                                border-radius: 10px;
+        }
+
+
+input{
+       text-align: center;
+       font-style:bold;
+       font-size: medium;
+               }
+
+               .logofinal{margin-top: 1rem;}
+
+
+/*-----------------------------------------------------------------------*/
+
+    footer{     border-top: 0.5rem solid orange;
+                grid-area: fo;
+                background-color: black;
+            }
+    
+   .dev{color: white;
+                text-align: center;
+                padding: 2rem;}

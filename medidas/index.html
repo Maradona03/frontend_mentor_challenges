@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="style.css">
+
+    <script src="calculos.js"></script>
+    
+    <title>LM Perimetria e Composição Corporal</title>
+</head>
+
+
+<body>
+
+    <div class="container">
+
+        <header>
+
+            <div id="avatar"><img src="/imagens/avatar.png" width="80px" alt="lm"></div>
+            <div id="logo"><img src="/imagens/Logo Marca 2 png.png" width="220px" alt="lm"></div>
+          
+        </header>
+
+        <main>
+
+                <p><h2><span>  <strong>Composição Corporal e Perimetria</strong></span></h2></p>
+
+               <div class="sexo"> <p>Sexo:</p>
+                           
+                <select class="escolha"  id="sexo" onchange="sexo_selecionado()">
+                        <option value= selecione selected>Selecione</option>
+                        <option value= "masculino" >Masculino</option>
+                        <option value= "feminino" >Feminino</option>
+                   </select>
+               </div>
+                
+                <div class="dados_iniciais">
+                <tbody>
+                 
+                     <table id="tabela_nome">
+                            
+                        <tr>
+                            <td class="tdnome">Nome:</td>
+                            <td>
+                                <input name="nome" id="nome" class="dados" size="4" onblur="nome()"> </td></tr>
+                            
+        
+                        <tr>
+                        <td class="tdidade">Idade</td>
+                        <td>
+                            <input name="idade" id="idade" class="dados" size="4"> anos</td></tr>
+                        
+
+                        <tr>
+                            <td class="tdestatura">Estatura</td>
+                            <td>
+                            <input name="estatura" id="estatura" class="dados" size="4"> m</td></tr>
+
+                        <tr>
+                            <td class="tdpeso">Peso</td>
+                            <td>
+                                <input name="peso" id="peso" class="dados" onblur="peso()" size="4"> Kg</td></tr>
+
+                        <tr>
+                            <td class="tdpeso_ant">Peso anterior</td>
+                            <td>
+                            <input name="peso_anterior" id="peso_anterior" class="dados" onblur="peso_anterior()" size="4"> Kg</td></tr>
+                                
+                        <tr>
+                            <td class="tdgordura_ant" >% de gordura anterior</td>
+                            <td > 
+                            <input name="perc_anterior" id="gordura_anterior" class="dados" onblur="gorduraAnterior()" size="4"> %</td></tr>
+
+                        <tr>
+                            <td class="tdmassa_ant">Massa magra anterior</td>
+                            <td>
+                            <input name="massa_anterior" id="massa_anterior" class="dados" onblur="massaAnterior()" size="4"> Kg</td></tr>
+
+                    </table>
+                </tbody>
+                </div>
+        
+        
+                <div class="adipometria">
+                <tbody>
+            <tr>
+                <td width="50%"></td>
+            </tr>
+
+          
+            <table id="tabela">
+
+                <div class="logoadp"><img src="/imagens/compasso-de-calibre-vernier.png" width="60px">
+                <h3>Adipometria</h3>
+                </div>
+       
+     
+                        <tr>
+                            <td>Medida do triceps   :</td>
+                            <td>
+                                <input id="tri" size="4"> mm</td></tr>
+                                
+                        <tr>
+                            <td>Medida do bíceps  :</td>
+                            <td>
+                                <input id="biceps" size="4"> mm</td></tr>
+                        
+                        <tr>
+                            <td>Medida do peitoral   :</td>
+                            <td>
+                                <input id="pei" size="4"> mm</td></tr>
+                        <tr>
+                            <td>Medida da subscápula   :</td>
+                            <td>
+                                <input id="sub" size="4"> mm</td></tr>
+
+                        <tr>
+                            <td>Medida do suprailíaco :</td>
+                            <td>
+                                <input id="supra" size="4"> mm</td></tr>
+                                        
+                        <tr>
+                            <td>Medida do abdominal :</td>
+                            <td>
+                                <input id="abd" size="4"> mm</td></tr>
+                        <tr>
+                            <td>Medida da coxa :</td>
+                            <td>
+                                <input id="coxa" size="4"> mm</td></tr>
+                        
+                        <tr>
+                            <td>Medida da panturrilha :</td>
+                            <td>
+                                <input id="pant" size="4"> mm</td></tr>
+            
+                        <tr>
+                            <td colspan="2" align="center">
+                                <br>
+                                <input type="button" value="Calcular" id="calcular" onclick="percentual()" name="calcular">
+                                <input type="reset" name="limpar" id="limpar" value="Limpar"></td></tr>
+                            </tbody>
+                        </table>
+                   
+            </tbody>
+                </div>
+<br>
+            <div class="resultados">
+
+            <div class="resultadosLogo"><img src="/imagens/Logo Marca 2 png.png" width="160px">
+                <h3>Resultados</h3>
+            </div>
+    
+             <tbody>
+                <tr>
+                    <td width="50%"></td>
+                </tr>
+                <table id="tabela_resultados">
+
+
+
+                     
+                        <tr>
+                            <td>Data da Avaliação:</td>
+                            <td>
+                                <input type="date" name="data_aval" size="4"> </td></tr>
+                        
+                        <tr>
+                            <td>Nome:</td>
+                            <td>
+                                <input name="nome_resul" id="nome_resul" size="4"> </td></tr>
+            
+                        <tr>
+                            <td>Sexo: </td>
+                            <td>
+                                <input name="sexo_resul" id="sexo_resul" size="4"> </td></tr>
+
+                        <tr>
+                            <td>Peso Atual:</td>
+                            <td>
+                                <input id="peso_atual" size="4"> Kg</td></tr>
+
+                        <tr>
+                            <td>Peso Anterior:</td>
+                            <td>
+                                <input id="peso_ant_resul" size="4"> Kg</td></tr>
+
+                        <tr>
+                            <td>Diferença entre Pesos: </td>
+                            <td>
+                                <input id="diferenca_pesos" onclick="diferencaEntrePesos()" size="4"> kg</td></tr>
+                                
+                        <tr>
+                            <td>% de Gordura Atual:</td>
+                            <td>
+                                <input id="percent_atual" size="4"> %</td></tr>
+
+                        <tr>
+                            <td> % de Gordura Anterior:</td>
+                            <td>
+                                <input id="percent_anterior" size="4"> %</td></tr>
+
+                        <tr>
+                            <td>Diferença de % de Gordura:</td>
+                            <td>
+                                <input id="direfenca_percent" onclick="diferencaEntrePercentuais()" size="4"> %</td></tr>
+
+                        <tr>
+                            <td>Massa Magra Atual: </td>
+                            <td>
+                                <input id="mm_atual" size="4"> Kg</td></tr>
+
+                         <tr>
+                            <td>Massa Magra Anterior</td>
+                            <td>
+                                <input id="mm_anterior" size="4"> Kg</td></tr>
+
+                        <tr>
+                            <td>Diferença entre Massa Magras: </td>
+                            <td>
+                                <input id="direfenca_percent" size="4"> Kg</td></tr>
+
+                </table>
+             </tbody>
+            </div>
+           <br>
+            
+         
+
+           
+           <tbody>
+            <div class="perim">
+                <table id="perimetria">
+                    
+                   <div class="perimetri"><img src="/imagens/ginastica.png" width="60px">
+                     <h3> Perimetria</h3></div>
+           
+                
+                            <tr>
+                                <td>Braço direito</td>
+                                <td>
+                                    <input name="braco_d" size="4"> cm</td></tr>
+                                    
+                            <tr>
+                                <td>Braço esquerdo</td>
+                                <td>
+                                    <input name="braco_e" size="4"> cm</td></tr>
+                            
+                            <tr>
+                                <td>Peitoral</td>
+                                <td>
+                                    <input name="peitoral" size="4"> cm</td></tr>
+                            <tr>
+                                <td>Cintura</td>
+                                <td>
+                                    <input name="cintura" size="4"> cm</td></tr>
+    
+                            <tr>
+                                <td>Cintura infra</td>
+                                <td>
+                                    <input name="cintura_infra" size="4"> cm</td></tr>
+                                            
+                            <tr>
+                                <td>Quadril </td>
+                                <td>
+                                    <input name="quadril" size="4"> cm</td></tr>
+                            <tr>
+                                <td>Coxa Direita</td>
+                                <td>
+                                    <input name="coxa_fitaD" size="4"> cm</td></tr>
+
+                                    <tr>
+                                        <td>Coxa Esquerda</td>
+                                        <td>
+                                            <input name="coxa_fitaE" size="4"> cm</td></tr>
+                            
+                            <tr>
+                                <td>Coxa Infra Direita</td>
+                                <td>
+                                    <input name="coxa_infraD" size="4"> cm</td></tr>
+
+                                    <tr>
+                                        <td>Coxa Infra Esquerda</td>
+                                        <td>
+                                            <input name="coxa_infraE" size="4"> cm</td></tr>
+
+                            <tr>
+                                <td>Panturrilha Direita</td>
+                                <td>
+                                    <input name="pantu_d" size="4"> cm</td></tr>
+
+                            <tr>
+                                <td>Panturrilha Esquerda</td>
+                                <td>
+                                    <input name="pantu_e" size="4"> cm</td></tr>
+
+                                
+                           
+                            </table>
+                            <div class="logofinal"><img src="/imagens/Logo Marca png.png" width="60px"></div>               
+                </tbody>
+            </div>
+
+
+
+        </main>
+
+        <footer>
+            <div class="dev"> Criação e Design - Maradona03</div>
+        
+        </footer>
+
+
+
+    </div>
+    
+    
+</body>
+</html>
